@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator UI</title>
+</head>
+<body style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; background-color: #f4f4f4;">
+    <div class="calculator" style="width: 250px; padding: 20px; background: white; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); border-radius: 10px; margin-bottom: 20px;">
+        <input type="text" class="display" disabled style="width: 100%; height: 50px; font-size: 1.5rem; text-align: right; padding: 10px; border: none; background: #ddd; margin-bottom: 10px; border-radius: 5px;">
+        <div class="buttons" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+            <button onclick="showApples(7)" style="padding: 15px; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px; background: #eee;">7</button>
+            <button onclick="showApples(8)" style="padding: 15px; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px; background: #eee;">8</button>
+            <button onclick="showApples(9)" style="padding: 15px; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px; background: #eee;">9</button>
+            <button style="padding: 15px; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px; background: #eee;">/</button>
+            <button onclick="showApples(4)" style="padding: 15px; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px; background: #eee;">4</button>
+            <button onclick="showApples(5)" style="padding: 15px; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px; background: #eee;">5</button>
+            <button onclick="showApples(6)" style="padding: 15px; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px; background: #eee;">6</button>
+            <button style="padding: 15px; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px; background: #eee;">*</button>
+            <button onclick="showApples(1)" style="padding: 15px; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px; background: #eee;">1</button>
+            <button onclick="showApples(2)" style="padding: 15px; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px; background: #eee;">2</button>
+            <button onclick="showApples(3)" style="padding: 15px; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px; background: #eee;">3</button>
+            <button style="padding: 15px; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px; background: #eee;">-</button>
+            <button onclick="showApples(0)" style="padding: 15px; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px; background: #eee;">0</button>
+            <button style="padding: 15px; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px; background: #eee;">.</button>
+            <button style="padding: 15px; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px; background: #eee;">=</button>
+            <button style="padding: 15px; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px; background: #eee;">+</button>
+        </div>
+    </div>
+    <div class="apples" id="apples" style="font-size: 2rem; text-align: center;"></div>
+    <button onclick="showApples(0)" style="display: none;"></button>
+    <script>
+        function showApples(num) {
+            document.getElementById("apples").innerHTML = "🍎".repeat(num);
+        }
+    </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordered List Example</title>
+</head>
+<body>
+
+    <h2>Steps to Start a Manufacturing Bot</h2>
+    <ol>
+        <li>Turn on the power supply.</li>
+        <li>Log in to the control panel.</li>
+        <li>Select the bot you want to operate.</li>
+        <li>Assign tasks to the bot.</li>
+        <li>Monitor the bot's status via the dashboard.</li>
+        <li>Shut down the bot after completion.</li>
+    </ol>
+
+</body>
+</html> -->
